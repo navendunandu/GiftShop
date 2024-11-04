@@ -19,12 +19,14 @@ function accountApprovedEmail($email, $name) {
     $mail->isSMTP();
     $mail->Host = 'smtp.gmail.com';
     $mail->SMTPAuth = true;
-    $mail->Username = "giftshop925@gmail.com"; // Your Gmail
-    $mail->Password = "kjwu wgbi buww cqre"; // Your Gmail app password
+    $mail->Username = "thegiftshop925@gmail.com"
+; // Your Gmail
+    $mail->Password = "mvzk jmld zjqa rfip"; // Your Gmail app password
     $mail->SMTPSecure = 'ssl';
     $mail->Port = 465;
 
-    $mail->setFrom("giftshop925@gmail.com", 'DryDelights'); // Your Gmail with sender name
+    $mail->setFrom("thegiftshop925@gmail.com"
+, 'TheGiftShop'); // Your Gmail with sender name
 
     $mail->addAddress($email);
 
@@ -50,10 +52,10 @@ function accountApprovedEmail($email, $name) {
             Congratulations, " . htmlspecialchars($name) . "!
         </div>
         <p>Hi " . htmlspecialchars($name) . ",</p>
-        <p>Your seller account on DryDelights has been approved! You can now log in and start listing your products.</p>
+        <p>Your seller account on TheGiftShop has been approved! You can now log in and start listing your products.</p>
         <p>We are excited to have you onboard and look forward to seeing your success on our platform.</p>
         <a href='https://yourwebsite.com/login' class='button'>Log in to your account</a>
-        <p>Best regards,<br>DryDelights Team</p>
+        <p>Best regards,<br>TheGiftShop Team</p>
         <div class='footer'>
             This is an automated message. Please do not reply.
         </div>
@@ -62,7 +64,7 @@ function accountApprovedEmail($email, $name) {
 </html>
 ";
 
-    $mail->Subject = "Your DryDelights Seller Account Has Been Approved!";
+    $mail->Subject = "Your TheGiftShop Seller Account Has Been Approved!";
     $mail->Body = $message;
 
     if($mail->send()) {
@@ -82,12 +84,14 @@ function accountRejectedEmail($email, $name) {
     $mail->isSMTP();
     $mail->Host = 'smtp.gmail.com';
     $mail->SMTPAuth = true;
-    $mail->Username = "giftshop925@gmail.com"; // Your Gmail
-    $mail->Password = "kjwu wgbi buww cqre"; // Your Gmail app password
+    $mail->Username = "thegiftshop925@gmail.com"
+; // Your Gmail
+    $mail->Password = "mvzk jmld zjqa rfip"; // Your Gmail app password
     $mail->SMTPSecure = 'ssl';
     $mail->Port = 465;
 
-    $mail->setFrom("giftshop925@gmail.com", 'DryDelights'); // Your Gmail with sender name
+    $mail->setFrom("thegiftshop925@gmail.com"
+, 'TheGiftShop'); // Your Gmail with sender name
 
     $mail->addAddress($email);
 
@@ -112,10 +116,10 @@ function accountRejectedEmail($email, $name) {
             Account Application Status
         </div>
         <p>Dear " . htmlspecialchars($name) . ",</p>
-        <p>Thank you for your interest in becoming a seller on DryDelights. After reviewing your application, we regret to inform you that your account request has been declined.</p>
+        <p>Thank you for your interest in becoming a seller on TheGiftShop. After reviewing your application, we regret to inform you that your account request has been declined.</p>
         <p>If you have any questions or believe this decision was made in error, please feel free to reach out to our support team for further clarification.</p>
         <p>Thank you for your understanding.</p>
-        <p>Best regards,<br>DryDelights Team</p>
+        <p>Best regards,<br>TheGiftShop Team</p>
         <div class='footer'>
             This is an automated message. Please do not reply.
         </div>
@@ -124,7 +128,7 @@ function accountRejectedEmail($email, $name) {
 </html>
 ";
 
-    $mail->Subject = "DryDelights Seller Account Application Update";
+    $mail->Subject = "TheGiftShop Seller Account Application Update";
     $mail->Body = $message;
 
     if($mail->send()) {

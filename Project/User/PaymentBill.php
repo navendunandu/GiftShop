@@ -192,7 +192,7 @@ include("../Assets/Connection/Connection.php");
                             <p>Order Date:
                                 <?php echo $bookingDate ?>
                             </p>
-                            <p>Ordered from: DryDelights</p>
+                            <p>Ordered from: TheGiftShop</p>
                         </td>
                         <td style="width: 50%; text-align: right;">
                             <p style="margin: 5px 0">Invoice Generated on:

@@ -16,12 +16,13 @@ function welcomeEmail($email, $name){
     $mail->isSMTP();
     $mail->Host = 'smtp.gmail.com';
     $mail->SMTPAuth = true;
-    $mail->Username = "giftshop925@gmail.com"; // Your Gmail
-    $mail->Password = "kjwu wgbi buww cqre"; // Your Gmail app password
+    $mail->Username = "thegiftshop925@gmail.com"
+; // Your Gmail
+    $mail->Password = "mvzk jmld zjqa rfip"; // Your Gmail app password
     $mail->SMTPSecure = 'ssl';
     $mail->Port = 465;
 
-    $mail->setFrom($webMail, 'DryDelights'); // Your Gmail with sender name
+    $mail->setFrom('thegiftshop925@gmail.com', 'TheGiftShop'); // Your Gmail with sender name
 
     $mail->addAddress($email);
 
@@ -32,7 +33,7 @@ function welcomeEmail($email, $name){
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Welcome to DryDelights</title>
+        <title>Welcome to TheGiftShop</title>
         <style>
             body {
                 font-family: Arial, sans-serif;
@@ -74,14 +75,14 @@ function welcomeEmail($email, $name){
     <body>
         <div class="container">
             <div class="header">
-                Welcome to DryDelights, ' . htmlspecialchars($name) . '!
+                Welcome to TheGiftShop, ' . htmlspecialchars($name) . '!
             </div>
             <p>Hi ' . htmlspecialchars($name) . ',</p>
-            <p>Thank you for joining DryDelights! We are excited to have you as part of our community, where you wll find a wide range of quality products to explore and enjoy.</p>
+            <p>Thank you for joining TheGiftShop! We are excited to have you as part of our community, where you wll find a wide range of quality products to explore and enjoy.</p>
             <p>To get the most out of your experience, feel free to browse our collections, save your favorite items, and reach out if you have any questions.</p>
-            <a href="https://drydelights.com" class="button">Explore Now</a>
+            <a href="https://TheGiftShop.com" class="button">Explore Now</a>
             <p>We are here to support you along the way. Welcome aboard!</p>
-            <p>Warm regards,<br>DryDelights Team</p>
+            <p>Warm regards,<br>TheGiftShop Team</p>
             <div class="footer">
                 This is an automated message. Please do not reply.
             </div>
@@ -90,7 +91,7 @@ function welcomeEmail($email, $name){
     </html>
     ';
 
-    $mail->Subject = "Welcome to DryDelights!";
+    $mail->Subject = "Welcome to TheGiftShop!";
     $mail->Body = $message;
   
     if($mail->send()) {

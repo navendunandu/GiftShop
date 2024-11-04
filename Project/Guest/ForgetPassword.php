@@ -25,7 +25,7 @@ function otpEmail($email,$otp){
     $mail->Host = 'smtp.gmail.com';
     $mail->SMTPAuth = true;
     $mail->Username = 'thegiftshop925@gmail.com';
-    $mail->Password = 'kjwu wgbi buww cqre';
+    $mail->Password = 'mvzk jmld zjqa rfip';
     $mail->SMTPSecure = 'ssl';
     $mail->Port = 465;
 

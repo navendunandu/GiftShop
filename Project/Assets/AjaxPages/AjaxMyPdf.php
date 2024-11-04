@@ -59,12 +59,13 @@ if (isset($_POST["printContents"])) {
     $mail->isSMTP();
     $mail->Host = 'smtp.gmail.com';
     $mail->SMTPAuth = true;
-    $mail->Username = "giftshop925@gmail.com"; // Your Gmail
-    $mail->Password = "kjwu wgbi buww cqre"; // Your Gmail app password
+    $mail->Username = "thegiftshop925@gmail.com"
+; // Your Gmail
+    $mail->Password = "mvzk jmld zjqa rfip"; // Your Gmail app password
     $mail->SMTPSecure = 'ssl';
     $mail->Port = 465;
 
-    $mail->setFrom('thejewelleryshop13@gmail.com'); 
+    $mail->setFrom('thegiftshop925@gmail.com', 'TheGiftShop'); 
     $mail->addAddress($email);//to Gmail Address
 
     $mail->addAttachment($pdfFilename);
@@ -76,7 +77,7 @@ if (isset($_POST["printContents"])) {
             <p>Dear $name,</p>
             <p>Thank you for your recent payment. Please find attached the invoice for your records.</p>
             <p>If you have any questions, feel free to reach out to us.</p>
-            <p>Best regards,<br>The Jewellery Shop</p>
+            <p>Best regards,<br>TheGiftShop</p>
         ";
 
     if ($mail->send()) {
